@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - umix11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>umix11</h1>
+        <p>unix enthusiast / minimalist</p>
+        <nav>
+            <a href="index.html">about</a>
+            <a href="posts.html">posts</a>
+            <a href="projects.html">projects</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section active">
+            <h2>Projects</h2>
+            
+            <article class="project">
+                <h3>mg-unicode</h3>
+                <div class="description">
+                    <p>mg is emacs-like code editor from OpenBSD. I added some fixes, which are very important for me.</p>
+                    <ul>
+                        <li>utf-8 support</li>
+                        <li>No ^M symbol while editig files from W*ndows</li>
+                        <li>Copying to clipboard support(requires xclip)</li>
+                        <li>No backup files and 4 indents on tab by default</li>
+                    </ul>
+                </div>
+                <div class="tags">[code] <a href="https://codeberg.org/umix11/mg-unicode">https://codeberg.org/umix11/mg-unicode.git</a></div>
+            </article>
+            
+            <article class="project">
+                <h3>5element</h3>
+                <div class="description">
+                    <p>Rio WM fork (<a href="https://github.com/rdap/rio">rdap/rio</a>)</p>
+                    <ul>
+                        <li>More customizable(config.h)</li>
+                        <li>Button 1 is primary instead of button 3</li>
+                        <li>some bug fixes, like only 60hz support</li>
+                    </ul>
+                </div>
+                <div class="tags">[WM] [X11] <a href="https://codeberg.org/umix11/5element">https://codeberg.org/umix11/5element.git</a></div>
+            </article>
+            
+            <article class="project">
+                <h3>cutefetch</h3>
+                <div class="description">
+                    <p>Minimalistic and cute fetch program on Rust. It is my first program on Rust, just for "touching" it</p>
+                    <ul>
+                        <li>No dependencies</li>
+                        <li>Most distros support(not tested on BSD systems)</li>
+                        <li>Very cute lol</li>
+                    </ul>
+                </div>
+                <div class="tags">[Rust] [OC] <a href="https://codeberg.org/umix11/cutefetch">https://codeberg.org/umix11/cutefetch.git</a></div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
