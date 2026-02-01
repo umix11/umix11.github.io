@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>umix11</title>
+
+	<link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+
+<body>
+
+	<header>
+		<h1><a href="/index.html">Welcome to my $HOME</a></h1>
+	</header>
+
+	<nav id="side-bar">
+		<ul>
+<li><a href="/projects.html">› projects</a></li>
+<li><a href="/posts.html">› posts</a></li>
+<li><a href="/uses.html">» uses</a></li>
+<li><a href="/gallery.html">› gallery</a></li>
+<li><a href="/contact.html">› contact</a></li>
+</ul>
+<script>
+function toggleFolder(elem) {
+	var ul = elem.parentNode.querySelector('ul');
+	if (ul.style.display === 'none' || ul.style.display === '') {
+		ul.style.display = 'block';
+		elem.innerHTML = elem.innerHTML.replace('▶', '▼');
+	} else {
+		ul.style.display = 'none';
+		elem.innerHTML = elem.innerHTML.replace('▼', '▶');
+	}
+}
+</script>
+	</nav>
+
+	<article>
+	<h2 id="tools-i-use-for-daily-drive">Tools I use for daily drive</h2>
+<h3 id="hardware">Hardware</h3>
+<ul>
+<li><strong>Main machine</strong>: Lenovo Ideapad L340 17&#8221; (Intel i7 9th gen, 16GB RAM, 512GB SSD) [using]</li>
+<li><strong>Secondary</strong>: Raspberry Pi 3B (home server &#47; testing) [using]</li>
+<li><strong>Third</strong>: Sony Vaio (experiments) [fixing]</li>
+<li><strong>Keyboard</strong>: Aula f75 with custom keycaps</li>
+<li><strong>Mouse</strong>: Darmoshark m3</li>
+</ul>
+<h3 id="software-stack">Software Stack</h3>
+<ul>
+<li>OS: Gentoo Linux (main), Alpine (rpi)</li>
+<li>Kernel: bin</li>
+<li>Init: OpenRC</li>
+<li>Shell: bash</li>
+<li>Terminal: st</li>
+<li>Editor: emacs</li>
+<li>WM: wmutils + shell scripts</li>
+<li>Browser: Helium (GUI), links&#47;w3m (CLI)</li>
+</ul>
+<h3 id="daily-workflow">Daily Workflow</h3>
+<ul>
+<li>Coding: emacs in st</li>
+<li>Web: Helium for heavy sites, links for quick lookups</li>
+<li>File management: shell commands&#47;fff</li>
+<li>Window management: wmutils + custom scripts</li>
+<li>Communication: telegram-desktop, irssi</li>
+</ul>
+
+	</article>
+
+	<footer>
+		<p><a href="https://github.com/uint23/kew">powered by kew</a></p>
+	</footer>
+</body>
+</html>

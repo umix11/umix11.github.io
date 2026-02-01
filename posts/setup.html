@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>umix11</title>
+
+	<link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+
+<body>
+
+	<header>
+		<h1><a href="/index.html">Welcome to my $HOME</a></h1>
+	</header>
+
+	<nav id="side-bar">
+		<ul>
+<li><a href="/projects.html">› projects</a></li>
+<li><a href="/posts.html">› posts</a></li>
+<li><a href="/uses.html">› uses</a></li>
+<li><a href="/gallery.html">› gallery</a></li>
+<li><a href="/contact.html">› contact</a></li>
+</ul>
+<script>
+function toggleFolder(elem) {
+	var ul = elem.parentNode.querySelector('ul');
+	if (ul.style.display === 'none' || ul.style.display === '') {
+		ul.style.display = 'block';
+		elem.innerHTML = elem.innerHTML.replace('▶', '▼');
+	} else {
+		ul.style.display = 'none';
+		elem.innerHTML = elem.innerHTML.replace('▼', '▶');
+	}
+}
+</script>
+	</nav>
+
+	<article>
+	<h1 id="i-hope-you-can-load-the-vid">I hope you can load the vid</h1>
+	<video width="100%" controls poster="/images/wmutils2.png">
+	  <source src="/vids/setup.mp4" type="video/mp4">
+	</video>
+	</article>
+
+	<footer>
+		<p><a href="https://github.com/uint23/kew">powered by kew</a></p>
+	</footer>
+</body>
+</html>

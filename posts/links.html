@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>umix11</title>
+
+	<link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+
+<body>
+
+	<header>
+		<h1><a href="/index.html">Welcome to my $HOME</a></h1>
+	</header>
+
+	<nav id="side-bar">
+		<ul>
+<li><a href="/projects.html">› projects</a></li>
+<li><a href="/posts.html">› posts</a></li>
+<li><a href="/uses.html">› uses</a></li>
+<li><a href="/gallery.html">› gallery</a></li>
+<li><a href="/contact.html">› contact</a></li>
+</ul>
+<script>
+function toggleFolder(elem) {
+	var ul = elem.parentNode.querySelector('ul');
+	if (ul.style.display === 'none' || ul.style.display === '') {
+		ul.style.display = 'block';
+		elem.innerHTML = elem.innerHTML.replace('▶', '▼');
+	} else {
+		ul.style.display = 'none';
+		elem.innerHTML = elem.innerHTML.replace('▼', '▶');
+	}
+}
+</script>
+	</nav>
+
+	<article>
+	<h2 id="some-useful-links">Some useful links</h2>
+<p><a href="https://nixers.net">nixers.net</a> - unix forum</p>
+<p><a href="https://z3bra.org/">z3bra.org</a> - legendary z3bra`s website</p>
+<p><a href="https://www.analognowhere.com/">unix_surrealism</a> - insane unix artwork</p>
+<p><a href="https://suckless.org/">suckless.org</a> - suckless team</p>
+<p><a href="https://kisslinux.github.io/">kiss linux</a> - most flexible distro ever</p>
+<p><a href="https://derivelinux.org/">dérive linux</a> - most minimal distro from scratch</p>
+
+	</article>
+
+	<footer>
+		<p><a href="https://github.com/uint23/kew">powered by kew</a></p>
+	</footer>
+</body>
+</html>

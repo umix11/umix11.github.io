@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>umix11</title>
+
+	<link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+
+<body>
+
+	<header>
+		<h1><a href="/index.html">Welcome to my $HOME</a></h1>
+	</header>
+
+	<nav id="side-bar">
+		<ul>
+<li><a href="/projects.html">› projects</a></li>
+<li><a href="/posts.html">› posts</a></li>
+<li><a href="/uses.html">› uses</a></li>
+<li><a href="/gallery.html">› gallery</a></li>
+<li><a href="/contact.html">› contact</a></li>
+</ul>
+<script>
+function toggleFolder(elem) {
+	var ul = elem.parentNode.querySelector('ul');
+	if (ul.style.display === 'none' || ul.style.display === '') {
+		ul.style.display = 'block';
+		elem.innerHTML = elem.innerHTML.replace('▶', '▼');
+	} else {
+		ul.style.display = 'none';
+		elem.innerHTML = elem.innerHTML.replace('▼', '▶');
+	}
+}
+</script>
+	</nav>
+
+	<article>
+	<h2 id="my-opinion-about-wmutils">My opinion about wmutils</h2>
+<p>I`m using wmutils a bit less than a week, and i configured all i need. It required a lots of patientce to do it.
+Was it hard? No. It was very interesting. I think it is interesting like configuring your kernel.</p>
+<p>In Linux&#47;Unix systems you are a god.
+You make a digital world in your computer. You can configure it as you want, from algoritms, script etc. to UI. Wmutils is the 
+must-have experience for EVERY Unix&#47;Linux user, like gentoo and arch&#47;artix installation.</p>
+<p>I was a wmhopper. I tried wms like 2bwm, bspwm, frankenwm, monsterwm, evilwm, wmx, cwm, mcwm(i dont remember how it spells), rio, 9wm, janeiro, 5element(my own rio fork), 
+dwm, and much more. Wmutils is what I wanted to find. FULL control of your windows. Tiling? just write script. Mouse window movement&#47;resize? write a script.
+Center(x, y, xy) window, 2borders, your own patterns or anything else? just write a fucking script. That perfect.</p>
+<p>Should <strong>YOU</strong> try it? Of course, yes. That will be the best xorg lesson for you. 
+Here is my current setup, dotfiles <a href="https://codeberg.org/umix11/wmutils-dotfiles">here</a></p>
+<p><img src="/images/wmutils2.png" alt="wmutils2" class="screenshot" /></p>
+
+	</article>
+
+	<footer>
+		<p><a href="https://github.com/uint23/kew">powered by kew</a></p>
+	</footer>
+</body>
+</html>

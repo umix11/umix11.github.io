@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>umix11</title>
+
+	<link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+
+<body>
+
+	<header>
+		<h1><a href="/index.html">Welcome to my $HOME</a></h1>
+	</header>
+
+	<nav id="side-bar">
+		<ul>
+<li><a href="/projects.html">› projects</a></li>
+<li><a href="/posts.html">› posts</a></li>
+<li><a href="/uses.html">› uses</a></li>
+<li><a href="/gallery.html">› gallery</a></li>
+<li><a href="/contact.html">› contact</a></li>
+</ul>
+<script>
+function toggleFolder(elem) {
+	var ul = elem.parentNode.querySelector('ul');
+	if (ul.style.display === 'none' || ul.style.display === '') {
+		ul.style.display = 'block';
+		elem.innerHTML = elem.innerHTML.replace('▶', '▼');
+	} else {
+		ul.style.display = 'none';
+		elem.innerHTML = elem.innerHTML.replace('▼', '▶');
+	}
+}
+</script>
+	</nav>
+
+	<article>
+	<h2 id="what-is-wmutils">What is wmutils?</h2>
+<p>I always was minimalist person. I dreamed about minimal editor, minimal wm, which are only include things i need.</p>
+<p>Finally, my dream setup is almost done.</p>
+<p><img src="/images/wmutils.png" alt="wmutils" class="screenshot" /></p>
+<p>I wont describe anything about wmutils here, z3bra have done this before me. Here is the <a href="https://blog.z3bra.org/2015/01/you-are-the-wm.html">link</a> to z3bra`s post</p>
+
+	</article>
+
+	<footer>
+		<p><a href="https://github.com/uint23/kew">powered by kew</a></p>
+	</footer>
+</body>
+</html>

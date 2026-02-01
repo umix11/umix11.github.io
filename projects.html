@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>umix11</title>
+
+	<link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+
+<body>
+
+	<header>
+		<h1><a href="/index.html">Welcome to my $HOME</a></h1>
+	</header>
+
+	<nav id="side-bar">
+		<ul>
+<li><a href="/projects.html">» projects</a></li>
+<li><a href="/posts.html">› posts</a></li>
+<li><a href="/uses.html">› uses</a></li>
+<li><a href="/gallery.html">› gallery</a></li>
+<li><a href="/contact.html">› contact</a></li>
+</ul>
+<script>
+function toggleFolder(elem) {
+	var ul = elem.parentNode.querySelector('ul');
+	if (ul.style.display === 'none' || ul.style.display === '') {
+		ul.style.display = 'block';
+		elem.innerHTML = elem.innerHTML.replace('▶', '▼');
+	} else {
+		ul.style.display = 'none';
+		elem.innerHTML = elem.innerHTML.replace('▼', '▶');
+	}
+}
+</script>
+	</nav>
+
+	<article>
+	<h2 id="projects">Projects</h2>
+<h3 id="mg-unicode">mg-unicode</h3>
+<p>mg is emacs-like code editor from OpenBSD. I added some fixes, which are very important for me.</p>
+<ul>
+<li>utf-8 support</li>
+<li>No ^M symbol while editing files from W*ndows</li>
+<li>Copying to clipboard support(requires xclip)</li>
+<li>No backup files and 4 indents on tab by default</li>
+</ul>
+<p>[code] <a href="https://codeberg.org/umix11/mg-unicode.git">https:&#47;&#47;codeberg.org&#47;umix11&#47;mg-unicode</a></p>
+<h3 id="5element">5element</h3>
+<p>Rio WM fork (<a href="https://github.com/rdap/rio">rdap&#47;rio</a>)</p>
+<ul>
+<li>More customizable(config.h)</li>
+<li>Button 1 is primary instead of button 3</li>
+<li>some bug fixes, like only 60hz support</li>
+</ul>
+<p>[WM] [X11] <a href="https://codeberg.org/umix11/5element.git">https:&#47;&#47;codeberg.org&#47;umix11&#47;5element</a></p>
+<h3 id="cutefetch">cutefetch</h3>
+<p>Minimalistic and cute fetch program on Rust. It is my first program on Rust, just for &#8220;touching&#8221; it</p>
+<ul>
+<li>No dependencies</li>
+<li>Most distros support(not tested on BSD systems)</li>
+<li>Very cute lol</li>
+</ul>
+<p>[Rust] [OC] <a href="https://codeberg.org/umix11/cutefetch.git">https:&#47;&#47;codeberg.org&#47;umix11&#47;cutefetch</a></p>
+
+	</article>
+
+	<footer>
+		<p><a href="https://github.com/uint23/kew">powered by kew</a></p>
+	</footer>
+</body>
+</html>

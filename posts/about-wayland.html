@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>umix11</title>
+
+	<link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+
+<body>
+
+	<header>
+		<h1><a href="/index.html">Welcome to my $HOME</a></h1>
+	</header>
+
+	<nav id="side-bar">
+		<ul>
+<li><a href="/projects.html">› projects</a></li>
+<li><a href="/posts.html">› posts</a></li>
+<li><a href="/uses.html">› uses</a></li>
+<li><a href="/gallery.html">› gallery</a></li>
+<li><a href="/contact.html">› contact</a></li>
+</ul>
+<script>
+function toggleFolder(elem) {
+	var ul = elem.parentNode.querySelector('ul');
+	if (ul.style.display === 'none' || ul.style.display === '') {
+		ul.style.display = 'block';
+		elem.innerHTML = elem.innerHTML.replace('▶', '▼');
+	} else {
+		ul.style.display = 'none';
+		elem.innerHTML = elem.innerHTML.replace('▼', '▶');
+	}
+}
+</script>
+	</nav>
+
+	<article>
+	<h2 id="i-wanted-to-try-hevel-wmwc">I wanted to try hevel wm(wc)</h2>
+<p>I wanted to try hevel wm, bc im a big fan of <a href="https://derivelinux.org/">dérive</a> linux. But i have one problem: nvidia. For X11 no matter what card u use, its just works, while you need to pour lead into your urethra just for launch wayland.</p>
+<p><img src="/images/fetch.jpg" alt="fetch" class="screenshot" /></p>
+<p>Yes, you can tell me &#8220;This is your issue, just buy new laptop&#8221;, BUT. Wayland is trying to be &#8220;X11 replacement&#8221;, then what the fuck? If X11 is &#8220;depricated&#8221;, and i cant use wayland, i must stay in the tty? Thats why i have chosen X11.</p>
+
+	</article>
+
+	<footer>
+		<p><a href="https://github.com/uint23/kew">powered by kew</a></p>
+	</footer>
+</body>
+</html>
